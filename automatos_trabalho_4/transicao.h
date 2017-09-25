@@ -2,6 +2,8 @@
 #define TRANSICAO_H
 #include "lista.h"
 
+using namespace std;
+
 lista* funcao_transicao(lista* estado, char c){
 
     lista* estados = inicializar();
@@ -51,7 +53,7 @@ bool verifica(lista* estados){
     tno* aux = estados->inicio;
     while(aux){
         //Parte do código onde mostra em quais estados parou!
-        std::cout << "q" << aux->info << std::endl;
+        cout << "q" << aux->info << endl;
         if(aux->info == '3')
             flag = true;
 
